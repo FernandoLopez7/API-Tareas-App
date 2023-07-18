@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'CRUD',
     'rest_framework',
-    'rest_framework_simplejwt',
 ]
 
 # Configuraciones de JWT
