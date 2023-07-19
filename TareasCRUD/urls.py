@@ -28,6 +28,5 @@ urlpatterns = [
     path('tareas/', TareaListCreateAPIView.as_view(), name='tarea-list-create'),
     path('tareas/<int:pk>/', TareaRetrieveUpdateDestroyAPIView.as_view(), name='tarea-detail'),
     path('tareas/asignadas/', TareaAsignadaListCreateAPIView.as_view(), name='tarea-asignada-list-create'),
-    # path('tareas/listasignadas/<int:pk>/', TareaAsignadaList.as_view(), name='tarea_asignada_detail'),
     path('tareas/asignadas/<int:pk>/', TareaAsignadaRetrieveUpdateDestroyAPIView.as_view(), name='tarea-asignada-detail'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
